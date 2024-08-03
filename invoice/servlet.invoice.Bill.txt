@@ -1,0 +1,26 @@
+/*Title :How to develop INVOICE Module in Database
+and Web Apps using CRUD and MVC features in Servlet API?
+		
+Stand for:
+	Applications                Database and Web
+	Database Server             MySQL
+	RDBMS                       MariaDB
+	Client-side-Script API      HTML,CSS,Javascript
+	Server-side Script API      Servlet
+	Web Server                  Apache Tomcat Version 10.1.19
+	Database Driver/Connector   mysql-connector-j-8.3.0.jar
+	
+Features:                       Purpose:
+    website                     develop by set of Static and Dynamic Webpages
+    Model                       develops Data layer
+    View                        develops Presentation layer
+    Controller                  develops Program-Coding layer
+                                alias name:Business-Logic layer
+    
+    Notes:
+    Annotation                  Servlet API webpages are developed with 
+                                annotations only
+    web.xml                     Servlet API webpages are developed without
+                                web.xml
+                                                          
+	/*

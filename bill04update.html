@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="ucss/utable.css"/>
+<link rel="stylesheet" href="ucss/utextbox.css"/>
+
+<title>Bill | Edit Things</title>
+
+<form id="formedititem" action="cedititem" method="post"
+   autocomplete="off">
+   
+   <input type="hidden" id="hdnsno" name="hdnsno"/>
+   
+   <table width='100%' border='0'>
+   
+   <tr> 
+       <td>Name
+       <td><input type="text" id="tbxtname" name="tbxtname"
+       placeholder="unknown"/>
+       
+   <tr>
+      <td>Price/Qty
+       <td><input type="text" id="tbxprice" name="tbxprice"
+       placeholder="0.0"  onkeyup="tbx_onkeyup(event);"/>
+       
+   <tr>
+      <td>Quantities
+       <td><input type="text" id="tbxqty" name="tbxqty"
+       placeholder="0"  onkeyup="tbx_onkeyup(event);"/>
+       
+    <tr>
+      <td>Total Price
+       <td><input type="text" id="tbxtprice"
+       placeholder="0.0"  readonly="readonly"/>
+      
+    <tr>
+      <td>Discount(%)
+       <td><input type="text" id="tbxdip"
+       placeholder="00.00%"  readonly="readonly"/>
+       
+     <tr>
+      <td>Discount amount
+       <td><input type="text" id="tbxdia"
+       placeholder="0.0"  readonly="readonly"/>
+       
+    <tr>
+      <td>Tax(CGST)
+       <td><input type="text" id="tbxcgst"
+       placeholder="0.0"  readonly="readonly"/>
+       
+    <tr>
+      <td>Tax(SGST)
+       <td><input type="text" id="tbxsgst"
+       placeholder="0.0"  readonly="readonly"/>
+         
+    <tr>
+      <td>Deducts
+       <td><input type="text" id="tbxdeducts"
+       placeholder="0.0"  readonly="readonly"/>
+        
+    <tr>
+      <td>Net Price
+       <td><input type="text" id="tbxnprice"
+       placeholder="0.0"  readonly="readonly"/>
+       
+       
+     <tr>
+        <td colspan="2" align="center"><input type="button" value="Home"
+        onclick="location.href='clistitem';"/><input type="reset"
+        value="Cancel" onclick="location.href='bill03insert.html';"/>
+        <input type="button" value="Save" onclick="formedititem.submit();"/>
+   
+   </table>
+   </form>
+   
+   <script src="ujs/bill.readqs.js" type="text/javascript">
+   </script>
+   
+   <script src="ujs/bill.compute.js" type="text/javascript">
+   </script>
+   
+   <script>
+   uNetPrice();
+   </script>
+  
